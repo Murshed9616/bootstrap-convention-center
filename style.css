@@ -1,0 +1,65 @@
+:root {
+    ----font-size: 'Poppins', sans-serif;
+}
+
+#abu {
+    font-family: var(----font-size);
+}
+
+/* nav */
+.abu {
+    font-size: 35px;
+}
+
+/* nav */
+
+/* calosal section start */
+.carousel-item img {
+    height: 700px;
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+/* calosal section end */
+
+/* explore section start */
+.every-headline {
+    font-size: 45px;
+}
+
+.every-paragarp {
+    font-size: 20px;
+}
+
+/* explore section end*/
+
+
+/* package section start */
+
+
+.package-title {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    font-size: 38px;
+}
+
+.first-box {
+    font-size: 20px;
+}
+
+
+
+/* happy client section end */
+
+
+/* happy client end */

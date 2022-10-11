@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Convention Center</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- font popines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- font popines -->
 </head>
 
 
@@ -15,128 +21,256 @@
     header start 
     ---------------->
     <header>
-        <nav class="navbar mt-4 mb-4">
-            <div class="container">
-                <a class="navbar-brand fs-2">Abacus Convention Center</a>
-                <div>
-                    <a class="navbar-brand fs-3">Home</a>
-                    <a class="navbar-brand fs-3">About Us</a>
-                    <a class="navbar-brand fs-3">Contact</a>
-                    <a class="navbar-brand fs-3">Subscribe</a>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg mt-4 mb-4 ">
-            <div class="container">
-                <div>
-                    <h1 class="navbar-brand fs-2" href="#">Abacus Convention Center</h1>
+        <!-- nav section start -->
+        <section class="mb-5 fixed-top">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <h1 id="abu" class="abu">Abacus Convention Center</h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item fs-5">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link disabled">Subcribe</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="#">Home<a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="#">About Us<a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="#">Contact<a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="#">Subscribe<a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- carosul section start -->
-        <section>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            </nav>
+        </section>
+        <!-- nav section end -->
+        <!-- calosal section start -->
+        <section class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item active">
+                        <img src="images/banner.png" class="" alt="...">
                         <div class="carousel-caption">
-                            <h1 class="text-warning fs-1">The perfect venue for your next event</h1>
-                            <p class="text-white fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint.
-                                Velit officia
-                                consequat duis enim velit </p>
-                            <button class="bg-white text-primary rounded border border-white p-2 fs-5">Book Now</button>
+                            <h1 id="abu">The perfect venue for your next event</h1>
+                            <p id="abu">Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Velit officia consequat duis enim velit </p>
+                            <button id="abu" class="btn bg-white text-primary px-4 fs-4">Book Now</button>
                         </div>
                     </div>
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="images/banner.png" class="" alt="...">
                         <div class="carousel-caption">
-                            <h1 class="text-warning fs-1">The perfect venue for your next event</h1>
-                            <p class="text-white fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint.
-                                Velit officia
-                                consequat duis enim velit </p>
-                            <button class="bg-white text-primary rounded border border-white p-2 fs-5">Book Now</button>
+                            <h1>The perfect venue for your next event</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Velit officia consequat duis enim velit </p>
+                            <button class="btn bg-white text-primary">Book Now</button>
                         </div>
                     </div>
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="images/banner.png" class="" alt="...">
                         <div class="carousel-caption">
-                            <h1 class="text-warning fs-1">The perfect venue for your next event</h1>
-                            <p class="text-white fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint.
-                                Velit officia
-                                consequat duis enim velit </p>
-                            <button class="bg-white text-primary rounded border border-white p-2 fs-5">Book Now</button>
+                            <h1>The perfect venue for your next event</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Velit officia consequat duis enim velit </p>
+                            <button class="btn bg-white text-primary">Book Now</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="visually-hidden">Next</span>
-            </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <!-- carosul section end -->
-
+        <!-- calosal section end -->
     </header>
     <!------------ 
     header end
     ----------->
 
-    <!-- body start -->
-    <section class="container mt-5 mb-5 row">
-        <div class=" col sm-12 d-flex align-items-center w-100">
-            <div class="w-50">
-                <img class="img-fluid" src="images/wedding.png" alt="">
+    <!-- main start -->
+    <main>
+        <!-- explore section start -->
+        <section class="container mt-5">
+            <div class="pt-5 pb-5 d-flex align-items-center flex-lg-row flex-md-column flex-sm-column flex-column ">
+                <div class=" col col-lg-6 col-me-6 col-sm-12 col-12 ">
+                    <img class="img-fluid w-100" src="images/wedding.png" alt="">
+                </div>
+                <div clAss="ms-5 fluid col col-lg-6 col-me-6 col-sm-12 col-12 sm-ms-0 ">
+                    <h1 class="every-headline" id="abu">Every moment is Precious</h1>
+                    <p class="every-paragarp text-muted" id="abu">Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor
+                        do amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button id="abu" class="btn bg-primary text-white px-4 fs-4">Explore our album</button>
+                </div>
             </div>
-            <div class="w-50">
-                <h1>Every moment is Precious </h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit.Exercitation veniam consequat sunt nostrud amet.</p>
-                <button class="bg-primary text-white">Explore our album</button>
+        </section>
+        <!-- explore section end -->
+        <!-- package section start -->
+        <section class="container mb-5">
+            <h1 id="abu" class="package-title text-center"> Our Package</h1>
+            <div class="">
+                <div class="row gy-2 gx-2">
+                    <!-- first box start -->
+                    <div class=" col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border border-white">
+                            <div class="card-body">
+                                <h1 id="abu" class="card-title">$300</h1>
+                                <h1 id="abu" class="card-title">Business Fair</h1>
+                                <p id="abu" class="card-text text-muted first-box">For most businesses event like book
+                                    fair, craft
+                                    fair.</p>
+                                <p id="abu" class="card-text text-muted first-box ">1. Limited Space Access</p>
+                                <p id="abu" class="card-text text-muted first-box">2. Secuirty Facility</p>
+                                <p id="abu" class="card-text text-muted first-box"> 3. Event Support</p>
+                                <p id="abu" class="card-text text-muted first-box">4. Decoration Design</p>
+                                <p id="abu" class="card-text text-muted first-box">5. Per Day Bill</p>
+                                <a href="#" id="abu"
+                                    class="btn btn-primary text-white  px-5 py-3 fs-5 rounded-pill mb-5">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- secend box start -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 ">
+                        <div class="card rounded-5 border border-white">
+                            <div class="card-body">
+                                <h1 id="abu" class="card-title">$500</h1>
+                                <h1 id="abu" class="card-title">wedding Basic</h1>
+                                <p id="abu" class="card-text text-muted first-box">For weddings with basic plan and
+                                    limited item fair.</p>
+                                <p id="abu" class="card-text text-muted first-box ">1. Full space Access</p>
+                                <p id="abu" class="card-text text-muted first-box">2. Food Arrangement</p>
+                                <p id="abu" class="card-text text-muted first-box"> 3. Mangement Support</p>
+                                <p id="abu" class="card-text text-muted first-box">4. Decoration design</p>
+                                <p id="abu" class="card-text text-muted first-box">5. Billed as shift</p>
+                                <a href="#" id="abu"
+                                    class="btn btn-primary text-white  px-5 py-3 fs-5 rounded-pill mb-5">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- thirth box start -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 bg-primary">
+                            <div class="card-body text-light">
+                                <button id="hot"
+                                    class="bg-danger fs-4 rounded rounded-3 border border-0 text-white">Hot</button>
+                                <h1 id="abu" class="card-title">$800</h1>
+                                <h1 id="abu" class="card-title">Wedding Plus</h1>
+                                <p id="abu" class="card-text text-light first-box">For most weddings with premium plans
+                                </p>
+                                <p id="abu" class="card-text text-light first-box ">1. Full Space Access</p>
+                                <p id="abu" class="card-text text-light first-box">2. Dedicated Team</p>
+                                <p id="abu" class="card-text text-light first-box"> 3. Buffet Food</p>
+                                <p id="abu" class="card-text text-light first-box">4. Premium Decoration</p>
+                                <p id="abu" class="card-text text-light first-box">5. Pay as Plan</p>
+                                <a href="#" id="abu"
+                                    class="btn btn-light text-primary  px-5 py-3 fs-5 rounded-pill mb-5">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fouth box start -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-5 border border-white">
+                            <div class="card-body">
+                                <h1 id="abu" class="card-title">$300</h1>
+                                <h1 id="abu" class="card-title fs-2">Corporate Event</h1>
+                                <p id="abu" class="card-text text-muted first-box">For most corporate busines events</p>
+                                <p id="abu" class="card-text text-muted first-box ">1. Full Space Access</p>
+                                <p id="abu" class="card-text text-muted first-box">2. Dedicated Team</p>
+                                <p id="abu" class="card-text text-muted first-box"> 3. Buffet Food</p>
+                                <p id="abu" class="card-text text-muted first-box">4. Premium Decoration</p>
+                                <p id="abu" class="card-text text-muted first-box">5.Pay as Plan</p>
+                                <a href="#" id="abu"
+                                    class="btn btn-primary text-white  px-5 py-3 fs-5 rounded-pill mb-5">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- body end -->
+        </section>
+        <!-- package section end -->
+        <!-- clients section start -->
+        <section class="container mb-5">
+            <h1 id="abu" class="package-title text-center"> Happy Clients Says</h1>
+            <div class="row g-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4   ">
+                    <div class="card rounded-3 border border-0 shadow-lg p-4">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                            <p id="abu" class="card-text text-muted fs-5">Slate helps you see how many more days you
+                                need
+                                to work to
+                                reach
+                                your financial goal for the month and year.</p>
+                            <img src="images/person 2.png" alt="">
+                            <p id="abu" class="card-title fs-5 mt-4"> Regina Miles</p>
+                            <p id="abu">Banker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4  ">
+                    <div class="card rounded-3 border border-0 shadow-lg p-4">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                            <p id="abu" class="card-text text-muted fs-5">Slate helps you see how many more days you
+                                need
+                                to work to
+                                reach
+                                your financial goal for the month and year.</p>
+                            <img src="images/person 3.png" alt="">
+                            <p id="abu" class="card-title fs-5 mt-4"> Jone Drake</p>
+                            <p id="abu">Banker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4   ">
+                    <div class="card rounded-3 border border-0 shadow-lg p-4">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                            <p id="abu" class="card-text text-muted fs-5">Slate helps you see how many more days you
+                                need
+                                to work to
+                                reach
+                                your financial goal for the month and year.</p>
+                            <img src="images/person 1.png" alt="">
+                            <p id="abu" class="card-title fs-5 mt-4"> Cret Yater</p>
+                            <p id="abu">Banker</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- clients section END  -->
+
+
+
+    </main>
+    <!-- main end -->
 
 
 
